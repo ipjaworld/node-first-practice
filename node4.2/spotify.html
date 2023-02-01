@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>node.js server test</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+    margin: 0px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+nav {
+    width: 1903px;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-index {
+    float: right;
+}
+
+.nav-item {
+    padding: 28px 17px;
+    font-weight: 700;
+}
+
+main {
+    height: 969px;
+    background-color: rgb(41, 65, 171);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-area {
+    text-align: center;
+}
+
+.green-button {
+    border: none;
+    background-color: #1ed760;
+    padding: 14px 32px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2941ab;
+    width: 183.14px;
+    height: 46px;
+    border-radius: 500px;
+}
+
+.green-button:hover {
+    transform: scale(1.07);
+    background-color: #2de26d;
+}
+
+.headline {
+    font-size: 146px;
+    font-weight: 900;
+    color: #1ed760;
+    position: relative;
+    left: 225px;
+    padding-bottom: 40px;
+}
+
+.headline-first {
+    position: relative;
+    left: -2.5em;
+    line-height: 166px;
+}
+
+.headline-second {
+    line-height: 166px;
+}
+
+.sub-headline {
+    color: #1ed760;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+footer {
+    width: 1903px;
+    height: 530px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-area {
+    display: flex;
+    justify-content: space-between;
+    color: #919496;
+    margin: 12px 0;
+}
+
+
+.footer-bottom-id {
+    margin-right: 24px;
+    color: #919496;
+}
+
+.footer-country {
+    color: #919496;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.footer-container {
+    width: 1170px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.footer-firstBox {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-secondBox {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-item {
+    padding: 3px 0 15px;
+}
+
+.footer-upper-area {
+    height: 346px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.icon-area {
+    width: 54px;
+    height: 54px;
+    margin-right: 15px;
+    background-color: #222322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+
+
+.subtitle {
+    margin: 20px 0;
+    color: #919496;
+    font-weight: 900;
+}
+
+#icon {
+    scale: 150%;
+}
+
+#icon:hover {
+    color: #1ed760;
+}
+  </style>
+  <script src="https://kit.fontawesome.com/74c64a7de1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class = "logo-area">
+      <img src="./image/logo.png" width="132">   
+    </div>
+    <div class = "nav-index">
+      <a href="#" class = "nav-item">Premium</a>
+      <a href="#" class = "nav-item">Support</a>
+      <a href="#" class = "nav-item">Download</a>
+      <span class="nav-item">|</span>
+      <a href="#" class = "nav-item">Sign up</a>
+      <a href="#" class = "nav-item">Log in</a>
+    </div>
+  </nav>
+<!--   여기까지가 상단입니다. -->
+
+  <main>
+    <div class = "main-area">
+      <div class="headline">
+        <div class = "headline-first">
+          Listening is
+        </div>
+        <div class = "headline-second">
+          everything
+        </div>
+        
+      </div>
+      <div class = "sub-headline">
+        Millions of songs and podcasts. No credit card needed.
+      </div>
+      <div class="button-area">
+        <button class = "green-button">Get Spotify free</button>
+      </div>
+    </div>
+    
+  </main>
+<!-- 여기는 스포티파이 웹 사이트 내용이 들어갑니다. -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-upper-area">
+        <div class="footer-firstBox">
+          <div class="logo-area">
+            <img src="./image/logo.png" width="132">      
+          </div>
+          <div class="column">
+            <div class="subtitle">COMPANY</div>
+            <a href="#" class="footer-item">About</a>
+            <a href="#" class="footer-item">Jobs</a>
+            <a href="#" class="footer-item">For the Record</a>
+          </div>
+          <div class="column">
+            <div class="subtitle">COMMUNITIES</div>
+            <a href="#" class="footer-item">For Artists</a>
+            <a href="#" class="footer-item">Developers</a>
+            <a href="#" class="footer-item">Advertising</a>
+            <a href="#" class="footer-item">Investers</a>
+            <a href="#" class="footer-item">Vendors</a>
+          </div>
+          <div class="column">
+            <div class="subtitle">USEFUL LINKS</div>
+            <a href="#" class="footer-item">Support</a>
+            <a href="#" class="footer-item">Web Player</a>
+            <a href="#" class="footer-item">Free Mobile App</a>
+          </div>
+        </div>
+        <div class="footer-secondBox">
+          <div class="icon-area">
+            <i class="fab fa-instagram icon" id="icon" aria-hidden="true"></i>
+          </div>
+          <div class="icon-area">
+            <i class="fab fa-twitter icon" id="icon" aria-hidden="true"></i>
+          </div>
+          <div class="icon-area">
+            <i class="fab fa-facebook-f icon" id="icon" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-country">
+         <i class="fas fa-globe-africa" aria-hidden="true"></i>USA
+      </div>
+      
+      <div class="footer-bottom-area">
+        <div class="footer-bottom-item">
+          <a href="#" class="footer-bottom-id">Legal</a>
+          <a href="#" class="footer-bottom-id">Privacy Center</a>
+          <a href="#" class="footer-bottom-id">Privacy Policy</a>
+          <a href="#" class="footer-bottom-id">Cookies</a>
+          <a href="#" class="footer-bottom-id">About Ads</a>
+          <a href="#" class="footer-bottom-id">Additional CA Privacy Disclosures</a>
+        </div>
+        <span>
+          © 2021 Spotify AB
+        </span>
+      </div>
+    </div>
+    
+  </footer>
+<!--  하단바입니다.-->
+
+
+</body>
+
+</html>

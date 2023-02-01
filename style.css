@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+nav {
+    width: 1903px;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-index {
+    float: right;
+}
+
+.nav-item {
+    padding: 28px 17px;
+    font-weight: 700;
+}
+
+main {
+    height: 969px;
+    background-color: rgb(41, 65, 171);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-area {
+    text-align: center;
+}
+
+.green-button {
+    border: none;
+    background-color: #1ed760;
+    padding: 14px 32px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2941ab;
+    width: 183.14px;
+    height: 46px;
+    border-radius: 500px;
+}
+
+.green-button:hover {
+    transform: scale(1.07);
+    background-color: #2de26d;
+}
+
+.headline {
+    font-size: 146px;
+    font-weight: 900;
+    color: #1ed760;
+    position: relative;
+    left: 225px;
+    padding-bottom: 40px;
+}
+
+.headline-first {
+    position: relative;
+    left: -2.5em;
+    line-height: 166px;
+}
+
+.headline-second {
+    line-height: 166px;
+}
+
+.sub-headline {
+    color: #1ed760;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+footer {
+    width: 1903px;
+    height: 530px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-area {
+    display: flex;
+    justify-content: space-between;
+    color: #919496;
+    margin: 12px 0;
+}
+
+
+.footer-bottom-id {
+    margin-right: 24px;
+    color: #919496;
+}
+
+.footer-country {
+    color: #919496;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.footer-container {
+    width: 1170px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.footer-firstBox {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-secondBox {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-item {
+    padding: 3px 0 15px;
+}
+
+.footer-upper-area {
+    height: 346px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.icon-area {
+    width: 54px;
+    height: 54px;
+    margin-right: 15px;
+    background-color: #222322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+
+
+.subtitle {
+    margin: 20px 0;
+    color: #919496;
+    font-weight: 900;
+}
+
+#icon {
+    scale: 150%;
+}
+
+#icon:hover {
+    color: #1ed760;
+}
