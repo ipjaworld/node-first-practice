@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Example Socket.IO</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+  var socket = io();
+  socket.on('example message 1', function (data) {
+    $('#messages').append($('<li>').text('Received message: ' + data.hello));
+  });
+
+  socket.emit('example message 2', { hello: 'world 2' });
+</script>
+Messages: <ul id="messages"></ul>
+</body>
+</html>
